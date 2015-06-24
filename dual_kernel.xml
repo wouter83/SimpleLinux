@@ -1,0 +1,11 @@
+<journal>
+   <partition>0</partition>
+
+    <entry>
+        <name>active</name>
+        <index>0</index>
+        <kernel_img>bzImage</kernel_img>
+        <initrd>false</initrd>
+        <kernel_args>ro console=ttyS0,115200 vga=current</kernel_args>
+    </entry>
+</journal>

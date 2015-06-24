@@ -1,0 +1,22 @@
+file /init ../init.sh 0755 0 0
+
+dir /dev 755 0 0
+nod /dev/console 644 0 0 c 5 1
+nod /dev/tty 644 0 0 c 5 0
+nod /dev/tty0 644 0 0 c 4 0
+nod /dev/tty1 644 0 0 c 4 1
+nod /dev/tty2 644 0 0 c 4 2
+nod /dev/tty3 644 0 0 c 4 3
+nod /dev/tty4 644 0 0 c 4 4
+nod /dev/tty5 644 0 0 c 4 5
+nod /dev/loop0 644 0 0 b 7 0
+dir /bin 755 0 0
+dir /sbin 755 0 0
+dir /proc 755 0 0
+dir /sys 755 0 0
+dir /mnt 755 0 0
+dir /usr 755 0 0
+dir /usr/bin 755 0 0
+dir /usr/sbin 755 0 0
+file /bin/busybox ../busybox/busybox 755 0 0
+slink /bin/sh busybox 777 0 0
